@@ -21,7 +21,7 @@ Este proyecto utiliza Docker y Docker Compose para configurar y ejecutar un ento
 
 ## Notebooks
 
-* Los notebooks que desees abrir deben estar en la carpeta `notebooks`.
+* Los notebooks que desees abrir deben estar en la carpeta `/home/sage_user/notebooks`.
 * Esta carpeta se monta en el contenedor para que puedas acceder y trabajar con tus notebooks desde el entorno SageMath.
 
 ## Notas
