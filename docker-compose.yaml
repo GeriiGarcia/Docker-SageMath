@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sagemath:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sagemath_container
+    stdin_open: true
+    tty: true
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./sage_data:/home/sage_user  # Directorio persistente para datos
+      - ./notebooks:/home/sage_user  # Montar el directorio de notebooks en el contenedor
+    
